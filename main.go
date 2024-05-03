@@ -39,16 +39,24 @@ func main() {
 	//stack.Peek()
 	//fmt.Println(stack.Pop())
 
-	queue := NewQueue()
-	queue.Enqueue(1)
-	queue.Enqueue(2)
-	queue.Enqueue(3)
-	queue.Enqueue(4)
+	//queue := NewQueue()
+	//queue.Enqueue(1)
+	//queue.Enqueue(2)
+	//queue.Enqueue(3)
+	//queue.Enqueue(4)
+	//
+	//queue.Dequeue()
+	//queue.Dequeue()
+	//queue.Dequeue()
+	//queue.Dequeue()
+	//
+	//fmt.Println(queue.Peek())
 
-	queue.Dequeue()
-	queue.Dequeue()
-	queue.Dequeue()
-	queue.Dequeue()
+	binaryTree := NewBinaryTree()
+	binaryTree.Insert(5)
+	binaryTree.Insert(3)
+	binaryTree.Insert(7)
+	binaryTree.Insert(4)
 
-	fmt.Println(queue.Peek())
+	fmt.Println(binaryTree.Find(7).content)
 }
